@@ -1,0 +1,39 @@
+'https://plantuml.com/en/class-diagram
+@startuml
+!pragma layout smetana
+
+abstract class Creator {
+  + abstract factory_method(): None
+  + build_computer(): Product
+}
+abstract class Product {
+  + supply_computer(): str
+}
+
+class AppleCreator {
+  factory_method(): AppleComputer
+}
+class AppleComputer {
+  cpu: str
+  ram: str
+  ssd: str
+  + supply_computer(): str
+}
+
+class MicrosoftCreator{
+  factory_method(): MicrosoftComputer
+}
+class MicrosoftComputer {
+  cpu: str
+  ram: str
+  ssd: str
+  + supply_computer(): str
+}
+
+Creator <|.. AppleCreator
+Creator <|.. MicrosoftCreator
+Product <|.. AppleComputer
+Product <|.. MicrosoftComputer
+Product -- Creator
+
+@enduml

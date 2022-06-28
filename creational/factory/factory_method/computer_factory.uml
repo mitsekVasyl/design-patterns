@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/home/vmits/my_projects/udemy/design_patterns/creational/factory/factory_method/computer_factory.py</OriginalElement>
+  <nodes>
+    <node x="-331.0" y="676.0">creational.factory.factory_method.computer_factory.AppleComputer</node>
+    <node x="919.75" y="463.0">abc.ABC</node>
+    <node x="34.749999999999886" y="556.0">creational.factory.factory_method.computer_factory.Product</node>
+    <node x="557.7499999999999" y="18.0">abc.ABCMeta</node>
+    <node x="1003.75" y="-198.0">object</node>
+    <node x="998.0" y="724.5">creational.factory.factory_method.computer_factory.MicrosoftCreator</node>
+    <node x="316.9999999999999" y="676.0">creational.factory.factory_method.computer_factory.MicrosoftComputer</node>
+    <node x="1658.0" y="724.5">creational.factory.factory_method.computer_factory.AppleCreator</node>
+    <node x="1360.75" y="544.0">creational.factory.factory_method.computer_factory.Creator</node>
+    <node x="1086.75" y="-306.0">typing.Hashable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="creational.factory.factory_method.computer_factory.Product" target="abc.ABC" relationship="REALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="315.2499999999999" y="519.0" />
+      <point x="972.25" y="519.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="object" target="typing.Hashable" relationship="REALIZATION">
+      <point x="0.0" y="-305.5" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="abc.ABC" target="object" relationship="REALIZATION">
+      <point x="26.25" y="-15.5" />
+      <point x="998.5" y="438.0" />
+      <point x="1173.75" y="438.0" />
+      <point x="0.0" y="305.5" />
+    </edge>
+    <edge source="creational.factory.factory_method.computer_factory.Creator" target="abc.ABC" relationship="REALIZATION">
+      <point x="0.0" y="-41.0" />
+      <point x="1639.75" y="519.0" />
+      <point x="972.25" y="519.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="creational.factory.factory_method.computer_factory.AppleComputer" target="creational.factory.factory_method.computer_factory.Product" relationship="REALIZATION">
+      <point x="0.0" y="-77.5" />
+      <point x="-17.0" y="651.0" />
+      <point x="315.2499999999999" y="651.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="creational.factory.factory_method.computer_factory.MicrosoftComputer" target="creational.factory.factory_method.computer_factory.Product" relationship="REALIZATION">
+      <point x="0.0" y="-77.5" />
+      <point x="647.4999999999999" y="651.0" />
+      <point x="315.2499999999999" y="651.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="creational.factory.factory_method.computer_factory.MicrosoftCreator" target="creational.factory.factory_method.computer_factory.Creator" relationship="REALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="1318.0" y="651.0" />
+      <point x="1639.75" y="651.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="creational.factory.factory_method.computer_factory.AppleCreator" target="creational.factory.factory_method.computer_factory.Creator" relationship="REALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="1961.5" y="651.0" />
+      <point x="1639.75" y="651.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.543647363872083" showDependencies="false" x="788.2815605127181" y="35.5" />
+  <SelectedNodes>
+    <node>abc.ABCMeta</node>
+    <node>typing.Hashable</node>
+    <node>object</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+
