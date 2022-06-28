@@ -1,0 +1,62 @@
+'https://plantuml.com/en/class-diagram
+@startuml
+!pragma layout smetana
+
+interface AbstractFactory {
+  + abstract create_product_a(): ProductA
+  + abstract create_product_b(): ProductB
+}
+
+class ConcreteFactory1 {
+  + abstract create_product_a(): ProductA
+  + abstract create_product_b(): ProductB
+}
+
+class ConcreteFactory2 {
+  + abstract create_product_a(): ProductA
+  + abstract create_product_b(): ProductB
+}
+
+abstract class AbstractProductA {
+  + abstract useful_function_a(): ProductA
+}
+
+class ConcreteProductA1 {
+  + useful_function_a(): str
+}
+
+class ConcreteProductA2 {
+  + useful_function_a(): str
+}
+
+abstract class AbstractProductB {
+  + abstract useful_function_b(): str
+  + abstract another_useful_function_b(): str
+}
+
+class ConcreteProductB1 {
+  + useful_function_b(): str
+  + another_useful_function_b(): str
+}
+
+class ConcreteProductB2 {
+  + useful_function_b(): str
+  + another_useful_function_b(): str
+}
+
+ConcreteFactory1 ..|> AbstractFactory
+ConcreteFactory2 ..|> AbstractFactory
+
+ConcreteFactory1 ..> ConcreteProductA1
+ConcreteFactory1 ..> ConcreteProductB1
+
+ConcreteFactory2 ..> ConcreteProductA2
+ConcreteFactory2 ..> ConcreteProductB2
+
+AbstractProductA <|-- ConcreteProductA1
+AbstractProductA <|-- ConcreteProductA2
+
+AbstractProductB <|-- ConcreteProductB1
+AbstractProductB <|-- ConcreteProductB2
+
+@enduml

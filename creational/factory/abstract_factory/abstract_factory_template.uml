@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>creational.factory.abstract_factory.abstract_factory_template.AbstractProductA</OriginalElement>
+  <nodes>
+    <node x="-373.0" y="91.0">creational.factory.abstract_factory.abstract_factory_template.ConcreteProductB1</node>
+    <node x="15.5" y="477.0">creational.factory.abstract_factory.abstract_factory_template.AbstractProductA</node>
+    <node x="372.0" y="350.0">creational.factory.abstract_factory.abstract_factory_template.ConcreteFactory2</node>
+    <node x="15.5" y="-41.0">creational.factory.abstract_factory.abstract_factory_template.AbstractProductB</node>
+    <node x="-373.0" y="347.5">creational.factory.abstract_factory.abstract_factory_template.ConcreteFactory1</node>
+    <node x="388.0" y="585.0">creational.factory.abstract_factory.abstract_factory_template.ConcreteProductA2</node>
+    <node x="-373.0" y="585.0">creational.factory.abstract_factory.abstract_factory_template.ConcreteProductA1</node>
+    <node x="388.0" y="91.0">creational.factory.abstract_factory.abstract_factory_template.ConcreteProductB2</node>
+    <node x="7.5" y="218.0">creational.factory.abstract_factory.abstract_factory_template.AbstractFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="creational.factory.abstract_factory.abstract_factory_template.ConcreteFactory2" target="creational.factory.abstract_factory.abstract_factory_template.AbstractFactory" relationship="REALIZATION">
+      <point x="0.0" y="-41.0" />
+      <point x="734.5" y="325.0" />
+      <point x="362.0" y="325.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="creational.factory.abstract_factory.abstract_factory_template.ConcreteFactory1" target="creational.factory.abstract_factory.abstract_factory_template.AbstractFactory" relationship="REALIZATION">
+      <point x="0.0" y="-41.0" />
+      <point x="-10.5" y="325.0" />
+      <point x="362.0" y="325.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="creational.factory.abstract_factory.abstract_factory_template.ConcreteProductA1" target="creational.factory.abstract_factory.abstract_factory_template.AbstractProductA" relationship="REALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="-2.5" y="560.0" />
+      <point x="378.0" y="560.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="creational.factory.abstract_factory.abstract_factory_template.ConcreteProductB1" target="creational.factory.abstract_factory.abstract_factory_template.AbstractProductB" relationship="REALIZATION">
+      <point x="0.0" y="-41.0" />
+      <point x="-2.5" y="66.0" />
+      <point x="378.0" y="66.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="creational.factory.abstract_factory.abstract_factory_template.ConcreteProductA2" target="creational.factory.abstract_factory.abstract_factory_template.AbstractProductA" relationship="REALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="758.5" y="560.0" />
+      <point x="378.0" y="560.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="creational.factory.abstract_factory.abstract_factory_template.ConcreteProductB2" target="creational.factory.abstract_factory.abstract_factory_template.AbstractProductB" relationship="REALIZATION">
+      <point x="0.0" y="-41.0" />
+      <point x="758.5" y="66.0" />
+      <point x="378.0" y="66.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0220231681034482" showDependencies="false" x="329.5015485996704" y="483.60006589785837" />
+  <SelectedNodes>
+    <node>creational.factory.abstract_factory.abstract_factory_template.ConcreteProductB1</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+
