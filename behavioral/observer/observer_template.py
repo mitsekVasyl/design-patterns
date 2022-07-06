@@ -39,13 +39,13 @@ class Publisher:
         print(f"unsubscribing {subscriber}")
         del self._subscribers[self._subscribers.index(subscriber)]
 
-    def update(self, context):
+    def notify_subscriber(self, context):
         for subscriber in self._subscribers:
             subscriber.update(context)
 
     def business_logic(self, context):
         self._context = context
-        self.update(self._context)
+        self.notify_subscriber(self._context)
 
 
 # client code
