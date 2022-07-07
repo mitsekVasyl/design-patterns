@@ -1,0 +1,30 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+abstract class Component {
+  + do_stuff()
+}
+class ConcreteComponent1{
+  + do_stuff()
+}
+class Decorator {
+  - component: Component
+  + do_stuff()
+}
+class ConcreteDecorator1{
+  + do_stuff()
+}
+class ConcreteDecorator2{
+  + do_stuff()
+}
+
+Component <|-- ConcreteComponent1
+Component <|-- Decorator
+Component <--o Decorator
+
+Decorator <|-- ConcreteDecorator1
+Decorator <|-- ConcreteDecorator2
+
+
+@enduml
