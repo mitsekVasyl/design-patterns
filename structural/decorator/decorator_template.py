@@ -19,14 +19,14 @@ class ConcreteComponent1(Component):
 
 class Decorator(Component):
 
+    def __init__(self, component):
+        self._component = component
+
     def do_stuff(self):
         pass
 
 
 class ConcreteDecorator1(Decorator):
-
-    def __init__(self, component):
-        self._component = component
 
     def do_stuff(self):
         print(f"ConcreteDecorator1: Decorating component: {self._component}")
@@ -37,9 +37,6 @@ class ConcreteDecorator1(Decorator):
 
 
 class ConcreteDecorator2(Decorator):
-
-    def __init__(self, component):
-        self._component = component
 
     def do_stuff(self):
         print(f"ConcreteDecorator2: Decorating component: {self._component}")
