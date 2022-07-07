@@ -1,0 +1,36 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+abstract class Abstraction {
+  - implementation: Implementation
+  + feature_1()
+  + feature_2()
+}
+class ConcreteAbstraction{
+  + feature_1() # delegate work to implementation
+  + feature_2()
+}
+abstract class Implementation {
+  + method_1()
+  + method_2()
+  + method_3()
+}
+class ConcreteImplementationA{
+   + method_1()
+  + method_2()
+  + method_3()
+}
+class ConcreteImplementationB{
+   + method_1()
+  + method_2()
+  + method_3()
+}
+
+Abstraction o--> Implementation
+
+Abstraction <|-- ConcreteAbstraction
+Implementation <|-- ConcreteImplementationA
+Implementation <|-- ConcreteImplementationB
+
+@enduml
