@@ -9,8 +9,8 @@ interface Component {
 class Composite {
   - component: Component
   + add_component()
-  + remove_componenet()
-  + get_childern()
+  + remove_component()
+  + get_children()
   + do_staff()
 }
 
