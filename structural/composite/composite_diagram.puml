@@ -1,0 +1,27 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+interface Component {
+  + do_staff()
+}
+
+class Composite {
+  - component: Component
+  + add_component()
+  + remove_componenet()
+  + get_childern()
+  + do_staff()
+}
+
+class Leaf {
+  + do_staff()
+}
+
+Component <|-- Composite
+Component <|-- Leaf
+
+Component <--o Composite
+
+
+@enduml
