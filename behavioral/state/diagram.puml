@@ -1,0 +1,29 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+
+class Context {
+  - state
+  + Context(initial_state: State)
+  + change_state(state: State)
+  + do_staff()
+  + do_another_staff
+}
+
+interface State {
+  + do_staff()
+  + do_another_staff()
+}
+
+class ConcreteState {
+  - context: Context
+  + set_context(context)
+  + do_staff()
+  + do_another_staff()
+}
+
+Context o--> State
+State <|-- ConcreteState
+ConcreteState --> Context
+@enduml
