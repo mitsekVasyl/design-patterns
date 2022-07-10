@@ -6,7 +6,7 @@
 class Context {
   - state
   + Context(initial_state: State)
-  + change_state(state: State)
+  + set_state(state: State)
   + do_staff()
   + do_another_staff
 }
