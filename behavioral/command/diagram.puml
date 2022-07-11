@@ -1,0 +1,31 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+interface Command {
+  + execute()
+}
+
+class ConcreteCommand {
+  - receiver
+  - parameters
+  + execute():
+  | receiver.operation(parameters) |
+}
+
+class Invoker {
+  - command: Command
+  + set_command()
+  + execute_command():
+  | command.execute() |
+}
+
+class Receiver {
+  operation(a, b, c)
+}
+
+Invoker o--> Command
+ConcreteCommand --|> Command
+ConcreteCommand --> Receiver
+
+@enduml
