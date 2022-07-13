@@ -1,0 +1,28 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+abstract class Template {
+  + template_method()
+  + abstract step1()
+  + step2()
+  + step3()
+  + step4()
+}
+
+class Algorithm1 {
+  ...
+  + step1()
+  + step2()
+}
+
+class Algorithm2 {
+  ...
+  + step1()
+  + step4()
+}
+
+Template <|-- Algorithm1
+Template <|-- Algorithm2
+
+@enduml
