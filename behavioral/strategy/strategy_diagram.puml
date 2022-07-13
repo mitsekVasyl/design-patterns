@@ -1,0 +1,28 @@
+@startuml
+!pragma layout smetana
+'https://plantuml.com/class-diagram
+
+abstract class Strategy {
+  + abstract execute()
+}
+
+class ConcreteStrategy1 {
+  + execute()
+}
+
+class ConcreteStrategy2 {
+  + execute()
+}
+
+class Context {
+  - strategy: Strategy
+  + Context(strategy: Strategy)
+  + set_strategy(strategy)
+  + do_staff()
+}
+
+Strategy <|-- ConcreteStrategy1
+Strategy <|-- ConcreteStrategy2
+Context o--> Strategy
+
+@enduml
